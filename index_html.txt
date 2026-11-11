@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тату-мастер Кристина — Новосибирск | Тату от 1500 ₽</title>
+<meta name="description" content="Тату-мастер Кристина в Новосибирске. Работаю с 2024 года. Цены от 1500 ₽. Ул. Максима Горького, 39. Звоните и пишите — Telegram, WhatsApp, MAX.">
+<meta name="keywords" content="тату мастер Новосибирск, татуировка Новосибирск, тату недорого, тату от 1500">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Тату-мастер Кристина",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Максима Горького, 39",
+    "addressLocality": "Новосибирск",
+    "addressCountry": "RU"
+  },
+  "telephone": "+79268965386",
+  "priceRange": "от 1500 ₽",
+  "openingHours": "Ежедневно по записи"
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#0d0d0d; color:#eee; line-height:1.6;
+  }
+  a { text-decoration:none; }
+  .container { max-width:1100px; margin:0 auto; padding:0 20px; }
+
+  /* Шапка */
+  header {
+    position:sticky; top:0; z-index:100;
+    background:rgba(13,13,13,0.95); backdrop-filter:blur(8px);
+    border-bottom:1px solid #222; padding:14px 0;
+  }
+  .header-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .logo { font-size:20px; font-weight:700; letter-spacing:1px; }
+  .logo span { color:#e63946; }
+  .header-btns { display:flex; gap:10px; }
+
+  /* Кнопки */
+  .btn {
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 22px; border-radius:50px; font-weight:600;
+    font-size:15px; transition:0.25s; cursor:pointer; border:none;
+  }
+  .btn-call { background:#e63946; color:#fff; }
+  .btn-call:hover { background:#ff4d5a; transform:translateY(-2px); }
+  .btn-msg { background:transparent; color:#fff; border:2px solid #444; }
+  .btn-msg:hover { border-color:#e63946; color:#e63946; }
+
+  /* Главный экран */
+  .hero {
+    padding:90px 0 70px; text-align:center;
+    background:radial-gradient(circle at 50% 0%, #1a1a1a 0%, #0d0d0d 70%);
+  }
+  .hero h1 { font-size:clamp(28px, 6vw, 52px); line-height:1.2; margin-bottom:18px; }
+  .hero h1 span { color:#e63946; }
+  .hero p { font-size:clamp(15px, 3vw, 19px); color:#aaa; max-width:650px; margin:0 auto 32px; }
+  .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .badges { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; margin-top:40px; color:#888; font-size:14px; }
+  .badges i { color:#e63946; margin-right:6px; }
+
+  /* Секции */
+  section { padding:60px 0; }
+  h2 { font-size:clamp(24px, 4vw, 34px); text-align:center; margin-bottom:40px; }
+  h2 span { color:#e63946; }
+
+  /* Обо мне */
+  .about-text { max-width:750px; margin:0 auto; text-align:center; color:#bbb; font-size:17px; }
+  .about-text strong { color:#fff; }
+
+  /* Услуги */
+  .services { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:18px; }
+  .card {
+    background:#161616; border:1px solid #262626; border-radius:16px;
+    padding:26px; transition:0.3s;
+  }
+  .card:hover { border-color:#e63946; transform:translateY(-4px); }
+  .card i { font-size:26px; color:#e63946; margin-bottom:14px; }
+  .card h3 { font-size:19px; margin-bottom:8px; }
+  .card .price { color:#e63946; font-weight:700; font-size:18px; margin-top:10px; }
+  .card p { color:#999; font-size:14px; }
+
+  /* Контакты */
+  .contacts { background:#111; border-top:1px solid #222; border-bottom:1px solid #222; }
+  .contact-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:20px; }
+  .contact-item {
+    background:#161616; border-radius:16px; padding:26px; text-align:center;
+  }
+  .contact-item i { font-size:28px; color:#e63946; margin-bottom:12px; }
+  .contact-item h3 { font-size:16px; color:#888; font-weight:500; margin-bottom:6px; }
+  .contact-item a, .contact-item p { color:#fff; font-size:18px; font-weight:600; }
+  .contact-item a:hover { color:#e63946; }
+
+  /* Призыв */
+  .cta {
+    text-align:center; padding:70px 0;
+    background:linear-gradient(135deg, #1a0505 0%, #0d0d0d 100%);
+  }
+  .cta h2 { margin-bottom:16px; }
+  .cta p { color:#aaa; margin-bottom:30px; font-size:17px; }
+
+  /* Футер */
+  footer { text-align:center; padding:30px 0; color:#555; font-size:14px; border-top:1px solid #222; }
+
+  @media (max-width:600px) {
+    .header-btns .btn span { display:none; }
+    .header-btns .btn { padding:12px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">ТАТУ <span>КРИСТИНА</span></div>
+    <div class="header-btns">
+      <a href="tel:+79268965386" class="btn btn-call"><i class="fa-solid fa-phone"></i><span>Позвонить</span></a>
+      <a href="https://wa.me/79236105318" class="btn btn-msg"><i class="fa-solid fa-comment-dots"></i><span>Написать</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+<section class="hero">
+  <div class="container">
+    <h1>Тату-мастер <span>Кристина</span><br>в Новосибирске</h1>
+    <p>Делаю качественные татуировки с 2024 года. Цены низкие — от 1500 ₽. Индивидуальный подход, стерильность и аккуратность. Звоните или пишите — обсудим вашу идею!</p>
+    <div class="hero-btns">
+      <a href="tel:+79268965386" class="btn btn-call"><i class="fa-solid fa-phone"></i> Позвонить</a>
+      <a href="https://wa.me/79236105318" class="btn btn-msg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://t.me/+79236105318" class="btn btn-msg"><i class="fa-brands fa-telegram"></i> Telegram</a>
+    </div>
+    <div class="badges">
+      <div><i class="fa-solid fa-check"></i>Опыт с 2024 года</div>
+      <div><i class="fa-solid fa-check"></i>Цены от 1500 ₽</div>
+      <div><i class="fa-solid fa-check"></i>Стерильность</div>
+    </div>
+  </div>
+</section>
+
+<!-- ОБО МНЕ -->
+<section>
+  <div class="container">
+    <h2>Обо <span>мне</span></h2>
+    <div class="about-text">
+      <p>Привет! Меня зовут <strong>Кристина</strong>, я тату-мастер в Новосибирске. Работаю с <strong>2024 года</strong> — за это время сделала немало работ, к которым клиенты возвращаются и приводят друзей.</p>
+      <p style="margin-top:16px;">Работаю аккуратно, стерильно и без спешки. <strong>Цены низкие — от 1500 ₽</strong>, чтобы татуировка была доступна каждому. Помогу с эскизом, подскажу по уходу и всегда на связи.</p>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section style="background:#111;">
+  <div class="container">
+    <h2>Услуги и <span>цены</span></h2>
+    <div class="services">
+      <div class="card">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>Небольшая татуировка</h3>
+        <p>Надпись, символ, мини-рисунок</p>
+        <div class="price">от 1500 ₽</div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Средняя татуировка</h3>
+        <p>Рисунок среднего размера с деталями</p>
+        <div class="price">от 3000 ₽</div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-dragon"></i>
+        <h3>Большая работа</h3>
+        <p>Многосеансовые проекты, рукав</p>
+        <div class="price">от 5000 ₽</div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-rotate"></i>
+        <h3>Перекрытие (cover-up)</h3>
+        <p>Перекрытие старой татуировки</p>
+        <div class="price">от 4000 ₽</div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-paintbrush"></i>
+        <h3>Коррекция</h3>
+        <p>Обновление и доработка тату</p>
+        <div class="price">от 1500 ₽</div>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-comments"></i>
+        <h3>Консультация и эскиз</h3>
+        <p>Обсуждение идеи, подбор эскиза</p>
+        <div class="price">бесплатно</div>
+      </div>
+    </div>
+    <p style="text-align:center; color:#777; margin-top:26px; font-size:14px;">Итоговая цена зависит от размера и сложности — уточняйте при связи.</p>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts">
+  <div class="container">
+    <h2>Связаться <span>со мной</span></h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Позвонить</h3>
+        <a href="tel:+79268965386">8 (926) 896-53-86</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/79236105318">8 (923) 610-53-18</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-telegram"></i>
+        <h3>Telegram</h3>
+        <a href="https://t.me/+79236105318">8 (923) 610-53-18</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-comment"></i>
+        <h3>MAX</h3>
+        <a href="https://max.ru/+79236105318">8 (923) 610-53-18</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Адрес</h3>
+        <p>ул. Максима Горького, 39<br>Новосибирск</p>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Работаю</h3>
+        <p>Ежедневно по записи</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРИЗЫВ -->
+<section class="cta">
+  <div class="container">
+    <h2>Готовы к <span style="color:#e63946;">новой тату?</span></h2>
+    <p>Звоните или пишите — обсудим идею, подберём эскиз и договоримся о времени. Работаю с душой и по доступным ценам!</p>
+    <div class="hero-btns">
+      <a href="tel:+79268965386" class="btn btn-call"><i class="fa-solid fa-phone"></i> Позвонить</a>
+      <a href="https://wa.me/79236105318" class="btn btn-msg"><i class="fa-brands fa-whatsapp"></i> Написать</a>
+    </div>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer>
+  <div class="container">
+    © 2026 Тату-мастер Кристина · Новосибирск, ул. Максима Горького, 39
+  </div>
+</footer>
+
+</body>
+</html>
